@@ -1,8 +1,6 @@
 import hashlib
 import sys
 
-print("Bem vindo ao sistema")
-
 def get_hash(file_path):
     try:
         with open(file_path, "rb") as f:
