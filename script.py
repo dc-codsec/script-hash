@@ -6,6 +6,7 @@ print("Gerador de Hash SHA256")
 def get_hash(file_path):
     try:
         with open(file_path, "rb") as f:
+            print("Gerando o Hash...")
             file_bytes = f.read()
             return hashlib.sha256(file_bytes).hexdigest()
     except FileNotFoundError:
