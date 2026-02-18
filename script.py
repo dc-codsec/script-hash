@@ -1,6 +1,8 @@
 import hashlib
 import sys
 
+print("Gerador de Hash SHA256")
+
 def get_hash(file_path):
     try:
         with open(file_path, "rb") as f:
